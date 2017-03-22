@@ -2,6 +2,6 @@ MagicBall.java is a simple implementation of the "Magic 8 Ball" game. There are 
 
 Scribble.java is a simple canvas implementation where the user can perform simple scribble action.
 
-PingPongBall.java extends JPanel, defines ping pong ball object and how its coordinates update.
+PingPongBall.java extends JPanel, defines ping pong ball object and how coordinates update.
 
 BouncingPingPong.java extends JFrame, adds three instances of PingPongBall class and starts running each ball on a separate thread.
