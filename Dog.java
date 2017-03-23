@@ -28,15 +28,20 @@ public class Dog extends Animal implements Walkable{
 
 	public static void main(String[] args) {
 
-		Dog d = new Dog();
+		Dog dog1 = new Dog();
 
-		d.setName("Olivia");
-		System.out.println("Let me introduce you to " + d.getName() + ".");
+		dog1.setName("Olivia");
+		System.out.println("Let me introduce you to " + dog1.getName() + ".");
 
-		d.setSpecies("dog");
-		System.out.println(d.getName() + " is a " + d.getSpecies() + ".");
+		dog1.setSpecies("dog");
+		System.out.println(dog1.getName() + " is a " + dog1.getSpecies() + ".");
 
-		d.makeSound();
+		dog1.makeSound();
+
+		//Polymorphism example
+		Animal dog2 = dog1;
+		System.out.println("Animal's name is " + dog2.getName() + ".");
+		dog2.makeSound();
 
 	}
 }
