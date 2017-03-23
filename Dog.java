@@ -3,11 +3,11 @@ package simplePackage;
 public class Dog extends Animal implements Walkable{
 
 	public Dog() {
-
+		//empty constructor
 	}
 
 	public Dog(String name) {
-		this._name = name;
+		_name = name;
 	}
 
 	@Override
@@ -39,9 +39,9 @@ public class Dog extends Animal implements Walkable{
 		dog1.makeSound();
 
 		//Polymorphism example
-		Animal dog2 = dog1;
-		System.out.println("Animal's name is " + dog2.getName() + ".");
-		dog2.makeSound();
+		Animal a = new Dog();
+		System.out.println("Animal's name is " + a.getName() + ".");
+		a.makeSound();
 
 	}
 }

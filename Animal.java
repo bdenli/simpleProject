@@ -4,33 +4,34 @@ public abstract class Animal {
 
 	String _name; 
 	String _species;
+	String _sound;
 
 	public void setName(String name){
 
-		_name = name;
+		this._name = name;
 	}
 
 	public String getName(){
 
-		if (_name == null){
-			return _name = "[Unknown]";
+		if (this._name == null){
+			return this._name = "[Unknown]";
 		}
 		else
-			return _name;
+			return this._name;
 	}
 
 	public void setSpecies(String species){
 
-		_species = species;
+		this._species = species;
 	}
 
 	public String getSpecies(){
 
-		if (_species == null){
-			return _species = "[Unknown]";
+		if (this._species == null){
+			return this._species = "[Unknown]";
 		}
 		else
-			return _species;
+			return this._species;
 	}
 
 	public void sleep(){
@@ -43,5 +44,8 @@ public abstract class Animal {
 		System.out.println("Yum yum yum!");
 	}
 
-	public abstract void makeSound();
+	public void makeSound(){
+
+		System.out.println(this._sound);
+	}
 }
